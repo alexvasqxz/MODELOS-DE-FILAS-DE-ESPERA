@@ -42,7 +42,7 @@ interface ServerOneProps {
 const getHistory = (sim: MMs, n: number) => {
   let arr: number[] = [];
 
-  for (let i = 0; i < n; i += 1) {
+  for (let i = 0; i <= n; i += 1) {
     arr.push(sim.getPn(i));
   }
   return arr;
