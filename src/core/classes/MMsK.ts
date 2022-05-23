@@ -6,6 +6,7 @@ class MMsK extends Model implements IModel{
     lq:number;
     wq:number;
     l:number;
+    lambdae:number;
     w:number;
     ro:number;
     p0:number;
@@ -17,6 +18,7 @@ class MMsK extends Model implements IModel{
         this.lq = 0;
         this.wq = 0;
         this.l = 0;
+        this.lambdae = 0;
         this.w = 0;
         this.ro = 0;
         this.p0 = 0;
@@ -39,13 +41,14 @@ class MMsK extends Model implements IModel{
         var lqFirst = this.p0 * (this.lambda / this.miu) ** this.s * this.ro / (factorial(this.s) * (1 - this.ro) ** 2);
         var lqSecond = 1 - this.ro ** (this.k - this.s) - (1 - this.ro) * (this.k - this.s) * this.ro ** (this.k - this.s);
         this.lq = lqFirst * lqSecond;
-        var lambdae = this.lambda * (1 - this.getPn(this.k));
-        this.wq = this.lq/lambdae;
+        this.lambdae = this.lambda * (1 - this.getPn(this.k));
+        this.wq = this.lq/this.lambdae;
         this.w = this.wq + 1 / this.miu;
-        this.l = lambdae * this.w;
+        this.l = this.lambdae * this.w;
         return {
             ro: this.ro,
             l: this.l,
+            lambdae: this.lambdae,
             lq: this.lq,
             wq: this.wq,
             w: this.w,

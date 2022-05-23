@@ -64,6 +64,7 @@ const ServerK: React.FC<ServerOneProps> = ({ history }) => {
   const [state, setState] = useState({
     ro: 0,
     l: 0,
+    lambdae: 0,
     lq: 0,
     wq: 0,
     w: 0,
@@ -222,6 +223,12 @@ const ServerK: React.FC<ServerOneProps> = ({ history }) => {
                       <Icon>check</Icon>
                     </Avatar>
                     <ListItemText primary="&nbsp;&nbsp;Ro (λ / sµ)" secondary={"= " + state.ro} className={ classes.text}/>
+                  </ListItem>
+                  <ListItem>
+                    <Avatar className={classes.lambdae}> 
+                      <Icon>check</Icon>
+                    </Avatar>
+                    <ListItemText primary="&nbsp;&nbsp;λe" secondary={"= " + state.lambdae} />
                   </ListItem>
                   <ListItem>
                     <Avatar className={classes.Result2}> 

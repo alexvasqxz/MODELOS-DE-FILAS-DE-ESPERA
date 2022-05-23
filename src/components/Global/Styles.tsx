@@ -90,6 +90,9 @@ const useStyles = makeStyles((theme: Theme) =>
     Result7: {
       backgroundColor: "#AFC58C !important",
     },
+    lambdae: {
+      backgroundColor: "#967bb6 !important",
+    },
 
     card: {
       maxWidth: "30rem",
