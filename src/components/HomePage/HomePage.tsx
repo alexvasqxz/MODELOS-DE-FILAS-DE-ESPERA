@@ -33,7 +33,14 @@ const HomePage: React.FC<HomePageProps> = ({ history }) => {
     <Box className={classes.root}> 
       <div  className={classes.gradient}>
         <h1 className={classes.title}>SIMULADOR DE MODELOS DE COLAS</h1>
+        
         <Divider className={classes.divider} />
+        <h4 
+        className={classes.title}>
+          Gustavo Vasquez Acosta - A00823326 <br></br> <br></br>
+          Nicolas Gazzolo Varela - A01339945 <br></br> <br></br>
+          Andrea Villarruel Sernas - A01656255 
+          </h4>
         <Card className={classes.card}>
           <CardContent>
             <Link component={RouterLink} to="/mm1">
