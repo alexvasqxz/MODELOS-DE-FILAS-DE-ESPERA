@@ -173,7 +173,7 @@ const ServerOne: React.FC<ServerOneProps> = ({ history }) => {
                   onChange={(e) => handleChange(e.target.value, CW)}
                 />
               </Grid>
-              <Grid item xs={6}  className={classes.myPadding}>
+              <Grid item xs={12}  className={classes.myPadding}>
                 <TextField
                   label="Cs"
                   variant="outlined"

@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme: Theme) =>
       fontFamily: "Montserrat-Bold",
     },
     gradient: {     
-      background: "#FBDECC",
+      background: "#E8AF94",
       height: "20rem",
       borderRadius: "0px",
       padding: '50px 100px'
@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme: Theme) =>
       borderRadius: "0px",
     },
     title: {
-      color: "#70658A",
+      color: "#FFFFFF",
 
     },
     subtitles: {
@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     divider: {
       height: "5px !important",
-      backgroundColor:  "#70658A !important"
+      backgroundColor:  "#FFFFFF !important"
     },
     icon: {
     margin: 1 * 2,
